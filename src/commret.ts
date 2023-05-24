@@ -1,4 +1,4 @@
-/** 错误码 */
+/** 错误码枚举 */
 export enum EnumErrorCode {
     /** 成功 */
     OK = 0,
@@ -137,17 +137,37 @@ export class XCommRet<T = unknown> implements ICommRet<T> {
      * @param paramErr 错误码 @see error_common定义
      * @param paramMsg 错误信息
      * @param paramMsgPre 错误信息前缀 相当于执于了一次addErrorPre
+     * @param paramIsKeepData 是否保留已有的数据
      * @param paramData 携带的数据
      * @return 返回当前this
      */
-    public setError(paramErr: number, paramMsg = '', paramMsgPre?: string, paramData?: T): XCommRet<T> {
+    public setError(paramErr: number): XCommRet<T>;
+    public setError(paramErr: number, paramMsg: string): XCommRet<T>;
+    public setError(paramErr: number, paramMsg: string, paramMsgPre: string): XCommRet<T>;
+    public setError(paramErr: number, paramMsg: string, paramMsgPre: string, paramIsKeepData: true): XCommRet<T>;
+    public setError(
+        paramErr: number,
+        paramMsg: string,
+        paramMsgPre: string,
+        paramIsKeepData: false,
+        paramData?: T,
+    ): XCommRet<T>;
+    public setError(
+        paramErr: number,
+        paramMsg = '',
+        paramMsgPre?: string,
+        paramIsKeepData = false,
+        paramData?: T,
+    ): XCommRet<T> {
         this.m_err = paramErr;
         if (paramMsgPre) {
             this.m_msg = `${paramMsgPre}${paramMsg}`;
         } else {
             this.m_msg = paramMsg;
         }
-        this.m_data = paramData;
+        if (!(paramIsKeepData === true)) {
+            this.m_data = paramData;
+        }
         return this;
     }
     /**
