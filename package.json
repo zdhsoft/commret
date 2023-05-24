@@ -1,6 +1,6 @@
 {
     "name": "@zdhsoft/commret",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "一个通用的错误返回类",
     "main": "./dist/index.js",
     "scripts": {
