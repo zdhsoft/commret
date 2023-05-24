@@ -8,9 +8,6 @@
   <a href="https://www.npmjs.com/~zdhsoft">
     <img src="https://img.shields.io/npm/dm/@zdhsoft/commret=for-the-badge" alt="npm monthly downloads" />
   </a>
-    <a href="https://www.npmjs.com/~zdhsoft">
-    <img src="https://img.shields.io/npm/l/@zdhsoft/commret?style=for-the-badge" alt="npm license" />
-  </a>
   </p>
 
 -  在我的xmcommon项目中，已经有了XCommonRet这个类，已经是我的工程必要的组成。但是，我在尝试编写前端程序的时候，发现xmcommon并不能在前端中使用。所以计划将一引起必要，前后端都可以用的东西拆出来使用。XCommRet将是我拆出来的第一个。
