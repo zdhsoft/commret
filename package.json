@@ -2,7 +2,7 @@
     "name": "@zdhsoft/commret",
     "version": "1.0.0",
     "description": "一个通用的错误返回类",
-    "main": "./dist/main.js",
+    "main": "./dist/index.js",
     "scripts": {
         "prebuild": "rimraf dist",
         "format": "prettier --write \"src/**/*.ts\"",
@@ -11,9 +11,31 @@
         "build": "npm run lint &&tsc",
         "formatbuild": "npm run format && npm run build"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zdhsoft/commret.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
     "keywords": [],
     "author": "zdhsoft",
-    "license": "ts_project",
+    "license": "MIT",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://www.opensource.org/licenses/mit-license.php"
+        },
+        {
+            "type": "Apache-2.0",
+            "url": "https://opensource.org/licenses/apache2.0.php"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/zdhsoft/commret/issues"
+    },
+    "homepage": "https://github.com/zdhsoft/commret",
     "devDependencies": {
         "@types/lodash": "^4.14.189",
         "@types/node": "^16.18.3",

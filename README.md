@@ -1,6 +1,22 @@
 # 通用的返回信息类
+
+    <p align="center">
+<a href="https://www.npmjs.com/~zdhsoft"><img src="https://img.shields.io/npm/v/@zdhsoft/commret.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~zdhsoft"><img src="https://img.shields.io/npm/l/@zdhsoft/commret.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~zdhsoft"><img src="https://img.shields.io/npm/dm/@zdhsoft/commret.svg" alt="NPM Downloads" /></a>
+<a href="https://coveralls.io/github/zdhsoft/commret?branch=main" target="_blank"><img src="https://coveralls.io/repos/github/zdhsoft/commret/badge.svg?branch=main#9" alt="Coverage" /></a>
+  <a href="https://www.npmjs.com/~zdhsoft">
+    <img src="https://img.shields.io/npm/dm/@zdhsoft/commret=for-the-badge" alt="npm monthly downloads" />
+  </a>
+    <a href="https://www.npmjs.com/~zdhsoft">
+    <img src="https://img.shields.io/npm/l/@zdhsoft/commret?style=for-the-badge" alt="npm license" />
+  </a>
+  </p>
+
 -  在我的xmcommon项目中，已经有了XCommonRet这个类，已经是我的工程必要的组成。但是，我在尝试编写前端程序的时候，发现xmcommon并不能在前端中使用。所以计划将一引起必要，前后端都可以用的东西拆出来使用。XCommRet将是我拆出来的第一个。
 - 这里的代码全部使用typescript编写，并移除原来项目中，历史积累但是已经用不到的代码。并简化处理只保留必要的实现。
+
+
 
 - 代码地址
   - github: https://github.com/zdhsoft/commret
