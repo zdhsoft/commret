@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "npmBuild",
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": [],
+            "group": {
+                "kind":"test",
+                "isDefault": true
+            },
+            "detail":"编译代码"
+        },
+        {
+            "type": "npm",
+            "script": "format",
+            "group": "none",
+            "problemMatcher": [],
+            "label": "格式化代码",
+            "detail": "使用prettier格式化代码"
+        },
+        {
+            "type": "npm",
+            "script": "formatbuild",
+            "group": "none",
+            "problemMatcher": [],
+            "label": "格式化代码并编译",
+            "detail": "使用prettier格式化代码"
+        }
+
+    ]
+
+}
