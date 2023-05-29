@@ -3,7 +3,7 @@
         "module": "commonjs",
         // "tsBuildInfoFile": "./build_file", 与package中prebuild有冲突
         "declaration": true,
-        "removeComments": true,
+        "removeComments": false,
         "preserveConstEnums": true,
         "lib": [
             "ES2021"

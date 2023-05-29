@@ -134,7 +134,7 @@ export class XCommRet<T = unknown> implements ICommRet<T> {
     }
     /**
      * 设置错误信息
-     * @param paramErr 错误码 @see error_common定义
+     * @param paramErr 错误码 0 表示成功，其它数字表示失败
      * @param paramMsg 错误信息
      * @param paramMsgPre 错误信息前缀 相当于执于了一次addErrorPre
      * @param paramIsKeepData 是否保留已有的数据
